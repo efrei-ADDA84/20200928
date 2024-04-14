@@ -16,5 +16,5 @@ if __name__ == "__main__":
 
 #https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=236df28640d8e0bc71a29bd329f6a8d7
 
-#https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=aaca89a14b3698bbd46dd966b2fa436d
+#https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=f33b15497a97d7e530049f1c3686a43c
 

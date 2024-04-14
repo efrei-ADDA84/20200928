@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t mordjane/image_tp1:latest .
+      run: docker build -t mordjane/efrei-devops-tp2:1.0.0 .
       
     - name: Push Docker image
-      run: docker push mordjane/image_tp1:latest
+      run: docker push mordjane/efrei-devops-tp2:1.0.0
