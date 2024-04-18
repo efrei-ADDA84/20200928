@@ -35,4 +35,4 @@ docker push mordjane/image_tp1:tag
 
 Lancer l'image :
 
-docker run --env latitude="31.2504" --env longitude="-99.2506" --env API_KEY="aaca89a14b3698bbd46dd966b2fa436d" mordjane/image_tp1:tag
+docker run --env LAT="31.2504" --env LONG="-99.2506" --env API_KEY="f56a6cc9d2d2762c923e663630dc6615" mordjane/image_tp1:tag
