@@ -20,18 +20,17 @@ docker login
 
 Création de l'image docker :
 
-docker build -t efrei-devops-tp2:1.0.0 .
+docker build -t mordjane/efrei-devops-tp2:1.0.0 .
 
 
 Mettre à disposition l'image sur dockerhub :
 
-docker push mordjane/image_tp1:tag  
-docker tag efrei-devops-tp2:1.0.0 mordjane/efrei-devops-tp2:1.0.0
+docker push mordjane/efrei-devops-tp2:1.0.0
 
 
 Lancer l'image :
 
-docker run --network host --env API_KEY=f33b15497a97d7e530049f1c3686a43c efrei-devops-tp2:1.0.0
+docker run --network host --env API_KEY="f56a6cc9d2d2762c923e663630dc6615" --env LAT="0" --env LONG="0" mordjane/efrei-devops-tp2:1.0.0
 
 
 Configurer un workflow Github Action :

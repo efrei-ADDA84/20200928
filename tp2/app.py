@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 @app.route('/weather', methods=['GET'])
 def get_weather():
-
     latitude = request.args.get("lat")
     longitude = request.args.get("lon")
     
@@ -15,7 +14,7 @@ def get_weather():
 
     api_key = os.environ.get('API_KEY')
 
-    url = f"http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={long}&appid={api_key}&units=metric"
+    url = f"http://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid={api_key}&units=metric"
     response = requests.get(url)
     
     if response.status_code == 200:
@@ -23,7 +22,12 @@ def get_weather():
     else:
         return jsonify({'error': 'Failed to fetch weather data'}), response.status_code
 
+@app.route('/', methods=['GET'])
+def index():
+    latitude = request.args.get("lat")
+    longitude = request.args.get("lon")
+
+    return get_weather()
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8081)
-
-
+    app.run(host='0.0.0.0', port=8081, debug=True)
