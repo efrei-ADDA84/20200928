@@ -30,7 +30,7 @@ docker push mordjane/efrei-devops-tp2:1.0.0
 
 Lancer l'image :
 
-docker run --network host --env API_KEY="f56a6cc9d2d2762c923e663630dc6615" --env LAT="0" --env LONG="0" mordjane/efrei-devops-tp2:1.0.0
+docker run --network host --env API_KEY="f56a6cc9d2d2762c923e663630dc6615" mordjane/efrei-devops-tp2:1.0.0
 
 
 Configurer un workflow Github Action :
@@ -41,3 +41,6 @@ On le configure le github action docker-image.yml pour qu'il build et push l'ima
 Création des secrets :
 
 On ajoute des secrets repository au projet qui permettent la connexion à Docker automatiquement et qui sont utilisés dans le Github Action.
+
+Test avec terminal :
+curl "http://localhost:8081/?lat=5.902785&lon=102.754175"
