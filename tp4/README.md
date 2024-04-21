@@ -1,4 +1,4 @@
-## RAPPORT TP4
+# RAPPORT TP4
 
 Installation de TERRAFORM :
 brew tap hashicorp/tap
@@ -24,7 +24,7 @@ Connaitre l'adresse du sous-réseau :
 az network vnet subnet show --name internal --resource-group ADDA84-CTP --vnet-name network-tp4 --query "addressPrefix"
 
 
-# Il faut ensuite importer des ressources existantes dans le state de Terraform avant de pouvoir les gérer avec Terraform.
+### Il faut ensuite importer des ressources existantes dans le state de Terraform avant de pouvoir les gérer avec Terraform.
 
 Importer la ressource azurerm_public_ip :
 terraform import azurerm_public_ip.myvmip /subscriptions/765266c6-9a23-4638-af32-dd1e32613047/resourceGroups/ADDA84-CTP/providers/Microsoft.Network/publicIPAddresses/my-public-ip
@@ -44,7 +44,7 @@ Importe la ressource existante dans le state Terraform :
 terraform import azurerm_network_interface.myvmnic /subscriptions/765266c6-9a23-4638-af32-dd1e32613047/resourceGroups/ADDA84-CTP/providers/Microsoft.Network/networkInterfaces/devops-20200928
 
 
-# Problemes rencontrés : 
+### Problemes rencontrés : 
 Supprimer l'adresse IP publique de la configuration IP de l'interface réseau :
 az network nic ip-config update --name myNicConfiguration --nic-name my-nic --resource-group ADDA84-CTP --public-ip-address null
 
