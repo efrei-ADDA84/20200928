@@ -54,9 +54,10 @@ az vm image list : liste des iamges disponibles
 La modification des paramètres dans "source_image_reference" m'a permis de régler le problème.
 
 
-Commande terraform à utiliser :
-terraform init
-terraform plan
-terraform apply
-terraform destroy
+## Commande terraform à utiliser :
+
+- terraform init
+- terraform plan
+- terraform apply
+- terraform destroy
 
